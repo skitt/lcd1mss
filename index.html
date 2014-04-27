@@ -1,357 +1,1249 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+<title>La confiance dans un monde sous surveillance</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+<meta name="description" content="Découvrez OpenPGP et le web of trust">
+<meta name="author" content="Stephen Kitt">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+<link rel="stylesheet" href="css/reveal.min.css">
+<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+if( window.location.search.match( /print-pdf/gi ) ) {
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = 'css/print/pdf.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+</script>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+<style>
+.highlight {
+color: lightgreen;
+}
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
+img {
+border: none !important;
+background: rgb(17,17,17) !important;
+}
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+small {
+vertical-align: baseline !important;
+}
+</style>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+</head>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+<body>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+<div class="reveal">
+  
+  <!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+  <section>
+  <h1>La confiance dans un monde sous surveillance</h1>
+  <h3>OpenPGP et le <em>web of trust</em></h3>
+  <p>
+  <small><a href="mailto:steve@sk2.org">Stephen Kitt</a> / <a href="https://twitter.com/thekittster">@thekittster</a>
+  <br>
+  <nobr>79D9 C58C 50D6 B5AA 65D5  30C1 7597 78A9 A36B 494F</nobr></small>
+  </p>
+  </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+  <section>
+  <h1><a href="http://confiance.sk2.org">confiance.sk2.org</a></h1>
+  </section>
+  
+  <section>
+  <img class="stretch" src="Edward_Snowden-2.jpg" width="576" height="694">
+  </section>
+
+  <section>
+  <img src="worry.com.png" width="579" height="468">
+  <img class="fragment" src="worry-date.png" width="579" height="60">
+  <p><a
+  href="http://sethgodin.typepad.com/seths_blog/2014/04/maximizingworry.html">http://sethgodin.typepad.com/seths_blog/2014/04/maximizingworry.html</a></p>
+  </section>
+
+  <section>
+  <h2>Stephen Kitt</h2>
+<div style="width: 50%; float: left; padding-bottom: 0.5em;">
+  <h3 class="fragment" style="padding-top: 0.5em;">Quelques similarités</h3>
+  <p class="fragment">« Native speaker » anglais</p>
+  <p class="fragment">Blond foncé</p>
+  <p class="fragment">Porteur de lunettes</p>
+</div>
+<div style="width: 50%; float: right; padding-bottom: 0.5em;">
+  <h3 class="fragment" style="padding-top: 0.5em;">Quelques différences</h3>
+  <p class="fragment">Plus âgé</p>
+  <p class="fragment">Architecte SI chez <a href="http://www.erdf.fr/">ERDF</a></p>
+  <p class="fragment">Développeur <a href="http://www.debian.org/">Debian</a></p>
+</div>
+<h3 class="fragment">N’a jamais travaillé à la NSA</h3>
+  <aside class="notes">Réfléchissez à ce qui constituerait pour vous une preuve de chacun de ces éléments !</aside>
+  </section>
+
+<section>
+<img class="stretch" src="48477877.jpg">
+</section>
+
+<section>
+<img class="stretch" src="48478252.jpg">
+</section>
+
+<section>
+<img class="stretch" src="Kaa's_hypnotic_eyes.jpg" width="1024" height="768">
+</section>
+
+<section>
+<img class="stretch" src="geants-web-prism.png">
+<p><a
+href="http://www.nextinpact.com/news/86591-la-nsa-confirme-que-geants-web-savaient-pour-programme-prism.htm">http://www.nextinpact.com/news/86591-la-nsa-confirme-que-geants-web-savaient-pour-programme-prism.htm</a></p>
+</section>
+
+<section>
+<img class="stretch" src="nsa-rsa-2.png" width="654" height="521">
+<p><a
+href="http://arstechnica.com/security/2014/03/report-rsa-endowed-crypto-product-with-second-nsa-influenced-code/">http://arstechnica.com/security/2014/03/report-rsa-endowed-crypto-product-with-second-nsa-influenced-code/</a></p>
+</section>
+
+<section>
+<img class="stretch" src="huawei-infiltre-nsa.png">
+<p><a
+href="http://www.pcworld.fr/business/actualites,geant-chinois-huawei-aurait-ete-infiltre-par-la-nsa,547545,1.htm">http://www.pcworld.fr/business/actualites,geant-chinois-huawei-aurait-ete-infiltre-par-la-nsa,547545,1.htm</a></p>
+</section>
+
+<section>
+<img class="stretch" src="microsoft-emails.png">
+<p><a
+href="http://www.zdnet.fr/actualites/promis-microsoft-ne-lira-plus-les-emails-de-ses-utilisateurs-39799199.htm">http://www.zdnet.fr/actualites/promis-microsoft-ne-lira-plus-les-emails-de-ses-utilisateurs-39799199.htm</a></p>
+</section>
+
+<section>
+<img class="stretch" src="turkey-dns-hijack.png">
+<p><a
+href="http://arstechnica.com/information-technology/2014/03/turkey-now-blocking-social-media-by-hijacking-google-dns/">http://arstechnica.com/information-technology/2014/03/turkey-now-blocking-social-media-by-hijacking-google-dns/</a></p>
+</section>
+
+<section>
+<img class="stretch" src="tesla-hack.png" width="656" height="695">
+<p><a
+href="http://arstechnica.com/security/2014/04/how-mobile-app-weakness-could-let-hackers-track-and-unlock-a-tesla-model-s/">http://arstechnica.com/security/2014/04/how-mobile-app-weakness-could-let-hackers-track-and-unlock-a-tesla-model-s/</a></p>
+</section>
+
+<section>
+<h1>Que peut-on y faire ?</h1>
+</section>
+
+<section>
+<h2>Anatomie d’un téléchargement</h2>
+<img class="stretch" src="java8dl.png">
+</section>
+
+<section>
+<h2>Le long parcours d’un fichier</h2>
+<img class="stretch" src="download.oracle.com.png">
+</section>
+
+<section>
+<h2>Premier écueil...</h2>
+<img class="stretch" src="download.oracle.com-warning.png">
+</section>
+
+<section>
+<h2>MD5 à la rescousse !</h2>
+<img class="stretch" src="java8dlmd5.png">
+</section>
+
+<section>
+<h2>Pas simple à utiliser</h2>
+<img class="stretch" src="java8md5.png">
+</section>
+
+<section>
+<h2>Fragile</h2>
+<ul>
+  <li class="fragment">MD5 est vulnérable</li>
+  <li class="fragment">Les signatures sont fournies depuis le même
+  hôte que le téléchargement</li>
+  <li class="fragment">Pas de protection SSL sur les signatures</li>
+</ul>
+</section>
+
+<section>
+<h2>SSL ?</h2>
+</section>
+
+<section>
+<img class="stretch" src="heartbleed.svg">
+</section>
+
+<section>
+<img class="stretch" src="heartbleed.png">
+<p><a href="https://xkcd.com/1353/">https://xkcd.com/1353/</a></p>
+</section>
+
+<section>
+<img class="stretch" src="heartbleed_explanation.png">
+<p><a href="https://xkcd.com/1354/">https://xkcd.com/1354/</a></p>
+</section>
+
+<section>
+<img class="stretch" src="security_holes.png">
+<p><a href="https://xkcd.com/424/">https://xkcd.com/424/</a></p>
+<aside class="notes">Le trou de sécurité OpenSSL dans Debian, c’était
+en 2008. Bugs "goto fail" dans iOS et OS X révélés en février 2014,
+dans GnuTLS début mars 2014...</aside>
+</section>
+
+<section>
+<img class="stretch" src="heartbleed-arrest.png" width="654"
+height="738">
+<p><a
+href="http://arstechnica.com/tech-policy/2014/04/heartbleed-hacker-arrested-charged-in-connection-to-malicious-bug-exploit/">http://arstechnica.com/tech-policy/2014/04/heartbleed-hacker-arrested-charged-in-connection-to-malicious-bug-exploit/</a></p>
+</section>
+
+<section>
+<img class="stretch" src="ovh-ok.png">
+<p><a
+href="http://travaux.ovh.net/?do=details&id=10593">http://travaux.ovh.net/?do=details&id=10593</a></p>
+</section>
+
+<section>
+<img class="stretch" src="3shake.png">
+<p><a
+href="http://blog.cryptographyengineering.com/2014/04/attack-of-week-triple-handshakes-3shake.html">http://blog.cryptographyengineering.com/2014/04/attack-of-week-triple-handshakes-3shake.html</a></p>
+</section>
+
+<section>
+<h2>SSL : les grands principes</h2>
+<ul>
+  <li class="fragment">Clés publiques / privées</li>
+  <li class="fragment">Clés publiques associées par des certificats à
+  des <em>distinguished names</em> et des <em>alternative names</em>
+  <ul>
+    <li class="fragment">Adresse électronique</li>
+    <li class="fragment">Entrée DNS</li>
+  </ul>
+  </li>
+  <li class="fragment">Certificats identifiés par leur émetteur et
+  leur objet</li>
+  <li class="fragment">Partage de certificats généralement dans les
+  communications</li>
+  <li class="fragment">Confiance établie par signature de certificat
+  <ul>
+    <li class="fragment">Uniquement par des autorités de
+    certification</li>
+  </ul>
+  </li>  
+  <li class="fragment">Valeur des signatures décidée par les
+  navigateurs web</li>
+</ul>
+</section>
+
+<section>
+<h2>SSL : les grands défauts</h2>
+<ul>
+  <li class="fragment">Ne protège que la communication</li>
+  <li class="fragment">Les autorités de certification ne sont pas
+  fiables
+  <ul>
+    <li class="fragment">Audits opaques<br><small>(<a
+    href="https://bugs.debian.org/718434#239">https://bugs.debian.org/718434#239</a>)</small></li>
+    <li class="fragment">Compromises par le passé (DigiNotar, VeriSign...)</li>
+  </ul>
+  </li>
+  <li class="fragment">Les certificats ne sont pas fiables
+  <ul>
+    <li class="fragment">Google v. ANSSI</li>
+  </ul>
+  </li>
+  <li class="fragment">Les connexions sont vulnérables aux attaques « <em>MITM</em> »</li>
+  <li class="fragment">La révocation ne fonctionne pas<br><small>(<a
+  href="https://www.imperialviolet.org/2014/04/19/revchecking.html">https://www.imperialviolet.org/2014/04/19/revchecking.html</a>)</small></li>
+</ul>
+</section>
+
+<section>
+<h1>On ne peut pas faire confiance aux connexions sur Internet</h1>
+</section>
+
+<section>
+<img class="stretch" src="twitter-facebook-bout-en-bout.png">
+<p><a
+href="http://www.lemondeinformatique.fr/actualites/lire-twitter-et-facebook-buttent-sur-le-chiffrement-de-bout-en-bout-56933.html">http://www.lemondeinformatique.fr/actualites/lire-twitter-et-facebook-buttent-sur-le-chiffrement-de-bout-en-bout-56933.html</a></p>
+</section>
+
+<section>
+<h2>Peut-on mieux faire ?</h2>
+<img class="fragment stretch" src="phpdl.png">
+</section>
+
+<section>
+<h2>Vérification GPG</h2>
+<pre><code data-trim contenteditable>
+$ gpg --verify php-5.3.28.tar.bz2.asc php-5.3.28.tar.bz2
+gpg: Signature faite le mer. 11 déc. 2013 01:55:50 CET
+gpg:                avec la clef DSA 0x2F7956BC5DA04B5D
+gpg: Bonne signature de « Stanislav Malyshev (PHP key) &lt;smalyshev@gmail.com> » [inconnu]
+gpg:                 alias « Stanislav Malyshev (PHP key) &lt;stas@php.net> » [inconnu]
+gpg:                 alias « Stanislav Malyshev (PHP key) &lt;smalyshev@sugarcrm.com> » [inconnu]
+gpg: Attention : cette clef n'est pas certifiée avec une signature de confiance.
+gpg:             Rien n'indique que la signature appartient à son propriétaire.
+Empreinte de clef principale : F382 5282 6ACD 957E F380  D39F 2F79 56BC 5DA0 4B5D
+</code></pre>
+<p class="fragment">La signature est bonne ...</p>
+<p class="fragment">... mais on ne sait pas d’où vient la clé.</p>
+<p class="fragment">(On bénéficie quand même d’un niveau d’indirection
+supplémentaire par rapport à MD5.)</p>
+</section>
+
+<section>
+<h2>OpenPGP : les grands principes</h2>
+<ul>
+  <li class="fragment">Clés publiques / privées</li>
+  <li class="fragment">Clés associées à des <em>user ids</em>
+  <ul>
+    <li class="fragment">Nom, adresse électronique</li>
+    <li class="fragment">Photo</li>
+  </ul>
+  </li>
+  <li class="fragment">Clés identifiées par leur empreinte</li>
+  <li class="fragment">Partage de clés « hors bande »
+  <ul>
+    <li class="fragment">Réseau de serveurs de clés</li>
+    <li class="fragment">Trousseaux de clés</li>
+  </ul>
+  </li>
+  <li class="fragment">Confiance établie par signature de clé
+  <ul>
+    <li class="fragment">Par n’importe quelle autre clé
+    <small>(presque)</small></li>
+  </ul>
+  </li>
+  <li class="fragment">Appréciation individuelle de la valeur des
+  signatures</li>
+</ul>
+</section>
+
+<section data-state="phptree">
+<h2>L’arbre des clés PHP</h2>
+<canvas width="1024" height="651" id="phpview"></canvas>
+</section>
+
+<section>
+<h2>On peut encore mieux faire !</h2>
+<img class="stretch" src="linuxdl.png">
+</section>
+
+<section>
+<h2>Une signature de confiance</h2>
+<p>Sur un <em>tag</em> du noyau Linux :</p>
+<pre><code data-trim contenteditable>
+$ git tag -v v3.14  
+object 455c6fdbd219161bd09b1165f11699d6d73de11c
+type commit
+tag v3.14
+tagger Linus Torvalds &lt;torvalds@linux-foundation.org> 1396237223 -0700
+
+Linux 3.14
+gpg: Signature faite le lun. 31 mars 2014 05:40:23 CEST
+gpg:                avec la clef RSA 0x79BE3E4300411886
+gpg: Bonne signature de « Linus Torvalds &lt;torvalds@linux-foundation.org> » [totale]
+</code></pre>
+</section>
+
+<section>
+<h2>Une signature de confiance</h2>
+<p>Sur une archive du noyau Linux :</p>
+<pre><code data-trim contenteditable>
+$ gpg --verify linux-3.14.1.tar.sign linux-3.14.1.tar
+gpg: Signature faite le lun. 14 avril 2014 15:51:59 CEST
+gpg:                avec la clef RSA 0x38DBBDC86092693E
+gpg: Bonne signature de « Greg Kroah-Hartman (Linux kernel stable release signing key)
+     &lt;greg@kroah.com> » [totale]
+</code></pre>
+</section>
+
+<section data-state="linuxtree">
+<h2>L’arbre des clés Linux</h2>
+<canvas width="1024" height="651" id="linuxview"></canvas>
+</section>
+
+<section>
+<h2>Le <em>web of trust</em></h2>
+<ul>
+  <li class="fragment">Chaque ensemble de clés connectées constitue
+  une toile de confiance</li>
+  <li class="fragment">La multiplication des connexions rend la toile
+  résistante</li>
+  <li class="fragment">Chacun peut décider du niveau de confiance de
+  chaque signataire (<em>owner trust</em>)</li>
+  <li class="fragment">GnuPG calcule le niveau de confiance de chaque clé</li>
+  <li class="fragment">La toile la plus importante est le <em>strong
+  set</em>
+  <ul>
+    <li class="fragment">Près de 55 000 clés</li>
+    <li class="fragment">Distance moyenne de 6,1</li>
+    <li class="fragment">9,8 signatures en moyenne <small>(la clé la
+    plus signée en compte 694)</small></li>
+    <li class="fragment">Très résistant <small>(la taille du
+    <em>strong set</em> décroît de façon linéaire avec la suppression
+    de clés aléatoires)</small></li>
+  </ul>
+</li>
+</ul>
+<p class="fragment" style="padding-top: 0.5em;">Pour explorer le
+<em>web of trust</em> : <a
+href="http://pgp.cs.uu.nl/">http://pgp.cs.uu.nl/</a></p>
+</section>
+
+<section>
+<h2>Linux et OpenPGP</h2>
+<ul>
+  <li class="fragment">Modèle de développement ouvert</li>
+  <li class="fragment">Contributions ouvertes à tous, par
+  <em>patches</em> échangés par courrier électronique
+  ou sur <a href="https://www.facebook.com/groups/linuxpatches/">Facebook</a></li>
+  <li class="fragment">~ 12,5 millions de lignes de code</li>
+  <li class="fragment">~ 1 100 développeurs actifs</li>
+  <li class="fragment">> 7 modifications intégrées par heure</li>
+  <li class="fragment">Quelques dizaines de dépôts <code>git</code>
+  sur <a
+  href="https://git.kernel.org/cgit/"><code>kernel.org</code></a></li>
+  <li class="fragment">Comptes <code>kernel.org</code> limités par
+  clés OpenPGP
+  <ul>
+    <li class="fragment">Pour obtenir un compte, on doit avoir une clé
+    signée par une clé déjà utilisée sur <code>kernel.org</code></li>
+  </ul>
+  </li>
+  <li class="fragment">Tous les <em>tags</em> de version et les
+  archives téléchargeables sont signés</li>
+</ul>
+<p class="fragment"><small>Source : « <a
+href="http://www.linuxfoundation.org/news-media/infographics/who-writes-linux-2013">Who
+writes Linux 2013</a> »</small></p>
+</section>
+
+<section>
+<h2>Debian</h2>
+<p>
+<span class="fragment">~ 20 000 projets <em>upstream</em></span>
+<br>
+<small class="fragment"><a href="http://sources.debian.net/stats/">~ 1
+milliard de lignes de code</a></small>
+</p>
+<p class="fragment">↓</p>
+<p class="fragment" style="vertical-align: middle;"><a
+href="https://www.debian.org"><img src="openlogo-nd.svg" width="87"
+height="108" style="vertical-align:
+middle; padding-right: 0.5em;">Debian</a></p>
+<p>
+<small>
+<span class="fragment">~ 1 000 « développeurs »</span>
+<br>
+<span class="fragment">~ 1 100 <a
+href="https://contributors.debian.org">contributeurs actifs</a></span>
+<br>
+<span class="fragment">~ 4 paquets modifiés par heure</span>
+<br>
+<span class="fragment"><del>12</del> 11 plateformes supportées</span>
+</small>
+</p>
+<p class="fragment">↓</p>
+<p>
+<span class="fragment">Utilisateurs</span>
+<span class="fragment"> / Distributions dérivées</span>
+</p>
+</section>
+
+<section>
+<h2>Debian et OpenPGP</h2>
+<ul>
+  <li class="fragment">Pour obtenir des droits d’<em>upload</em>, il
+  faut avoir une clé signée par deux développeurs Debian</li>
+  <li class="fragment">Tous les <em>uploads</em> doivent être signés
+  par une clé dans le trousseau Debian</li>
+  <li class="fragment">Tous les fichiers disponibles en téléchargement
+  sont signés <small>(indirectement)</small> par une clé d’archive</li>
+  <li class="fragment">Les clés OpenPGP sont le moyen d’accès à
+  l’infrastructure Debian</li>
+</section>
+
+<section>
+<h2>À qui faites-vous confiance ?</h2>
+<ul>
+  <li class="fragment">Maven</li>
+  <li class="fragment"><code>pip</code></li>
+  <li class="fragment">RubyGems <small>(compromis en janvier
+  2013)</small></li>
+  <li class="fragment">CPAN</li>
+  <li class="fragment"><code>npm</code></li>
+  <li class="fragment">Des scripts JS minifiés sur un CDN</li>
+  <li class="fragment">Des PPA référencés sur un forum</li>
+  <li class="fragment">...</li>
+</ul>
+<p class="fragment">Peu s’en soucient... <a
+href="https://github.com/grant-olson/rubygems-openpgp-ca.org/blob/master/public/blog/nobody-cares-about-signed-gems.html">https://github.com/grant-olson/rubygems-openpgp-ca.org/blob/master/public/blog/nobody-cares-about-signed-gems.html</a></p>
+</section>
+
+<section>
+<pre><code>curl -L https://www.opscode.com/chef/install.sh | sudo bash</code></pre>
+</section>
+
+<section>
+<h1>Et vous ?</h1>
+<h1 class="fragment">Vous aussi pouvez participer !</h1>
+</section>
+
+<!-- Ensemble vertical (début) -->
+<section>
+
+<section id="etape1">
+<h3>Comment participer</h3>
+<h2>Étape 1 : créez une clé OpenPGP</h2>
+<p>Voir ci-dessous les instructions selon votre plateforme :</p>
+<ul>
+  <li>TL;DR (la version courte) :
+  <ul>
+    <li><a href="#/tldrinstlinwin">Linux / Windows</li>
+	<li><a href="#/tldrinstmacosx">Mac OS X</li>
+  </ul>
+  </li>
+  <li><a href="#/linuxinst">Linux</a></li>
+  <li><a href="#/windowsinst">Windows</a></li>
+  <li><a href="#/macosxinst">Mac OS X</a></li>
+</ul>
+</section>
+
+<section id="tldrinstlinwin">
+<h2>La version courte Linux / Windows</h2>
+<p>Installez <code>gnupg</code> ou <code>gnupg2</code> à partir de
+votre distribution Linux ou <a
+href="http://www.gpg4win.org/">Gpg4win</a> sous Windows.</p>
+<pre><code data-trim contenteditable>
+$ gpg --gen-key
+</code></pre>
+<p>Répondez « 1 » (RSA et RSA), « 4096 » (taille de clé), « 2y »
+(durée de validité initiale), confirmez la date d’expiration,
+saisissez vos prénom et nom (ensemble en réponse à l’invite « Nom
+réel : »), votre adresse électronique, ne saisissez pas de
+commentaire, confirmez (tapez « O »), saisissez votre
+<em>passphrase</em>.</p>
+<p>Lorsque <code>gpg</code> vous demande davantage d’entropie, lancez
+une recherche sur votre disque, tapez un long texte sur le
+clavier... Ça peut prendre plusieurs minutes !</p>
+<pre><code data-trim contenteditable>
+pub   4096R/0x3CF0E04BDEDF2B2C 2014-04-23 [expire : 2016-04-22]
+ Empreinte de la clef = 40EA 80F6 CFD0 29F7 91BA  38A9 3CF0 E04B DEDF 2B2C
+uid                [  ultime ] Stephen Kitt &lt;steve@sk2.org>
+sub   4096R/0x07AB1094CDD28FEE 2014-04-23 [expire : 2016-04-22]
+</code></pre>
+<p>Notez le numéro de votre clé, <code>0x3CF0E04BDEDF2B2C</code>
+ici. <a href="#/etape2">Étape 2...</a></p>
+</section>
+
+<section id="tldrinstmacosx">
+<h2>La version courte Mac OS X</h2>
+<p>Installez <a href="https://gpgtools.org">GPGTools</a>.</p>
+<p>Lorsque l’outil d’installation vous propose de générer une nouvelle paire de clés, remplissez les informations demandées et corrigez la longueur de clé :</p>
+<img class="stretch" src="gpgtools-create-key.png" width="1123" height="809">
+<p>L’outil créera votre clé et la mettra à disposition sur les serveurs de clés, ce qui vous permet de passer directement à l’<a href="#/etape3">étape 3</a>...</p>
+</section>
+
+<section id="linuxinst">
+<h2>Linux : installation</h2>
+<p>Installez <code>gnupg</code> (ou <code>gnupg2</code> si votre
+distribution le propose) et, si vous souhaitez une interface
+graphique, <code>gpa</code> ou <code>kleopatra</code> (KDE) :</p>
+<pre><code data-trim contenteditable>
+apt-get install gpa
+</code></pre>
+<pre><code data-trim contenteditable>
+apt-get install kleopatra
+</code></pre>
+<pre><code data-trim contenteditable>
+yum install gpa
+</code></pre>
+<pre><code data-trim contenteditable>
+yum install kleopatra
+</code></pre>
+<p>Pour rafraîchir vos clés automatiquement :</p>
+<pre><code data-trim contenteditable>
+apt-get install parcimonie
+</code></pre>
+</section>
+
+<section>
+<h2>Paramétrage</h2>
+<p>Créez un dossier <code>~/.gnupg</code> et le fichier
+<code>~/.gnupg/gpg.conf</code> comme suit (merci <a
+href="https://we.riseup.net/riseuplabs+paow/openpgp-best-practices">https://we.riseup.net/riseuplabs+paow/openpgp-best-practices</a>) :</p>
+<pre class="stretch"><code data-trim contenteditable>
+# Identifiants distincts des clés à l'affichage
+fixed-list-mode
+
+# Empreintes longues pour réduire les risques de spoofing
+keyid-format 0xlong
+with-fingerprint
+
+# Privilégions des algorithmes de hash plus résistants
+personal-digest-preferences SHA512 SHA384 SHA256 SHA224
+
+# De même dans les clés
+default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 BZIP2 ZLIB ZIP Uncompressed
+
+# Il faut utiliser un agent (cf. https://www.debian-administration.org/users/dkg/weblog/64)
+use-agent
+
+# Il faut connaître le niveau de confiance
+verify-options show-uid-validity
+list-options show-uid-validity
+
+# SHA512 pour les nouveaux certificats
+cert-digest-algo SHA512
+
+# Serveur de clés qui fonctionne, imposé dans tous les cas
+keyserver hkps://hkps.pool.sks-keyservers.net
+keyserver-options ca-cert-file=~/.gnupg/sks-keyservers.netCA.pem
+keyserver-options no-honor-keyserver-url
+</code></pre>
+<p>Enregistrez <a
+href="https://sks-keyservers.net/sks-keyservers.netCA.pem">https://sks-keyservers.net/sks-keyservers.netCA.pem</a>
+dans <code>~/.gnupg/</code>.</p>
+<p><small>Sous Windows, tout ça se trouve dans votre dossier
+« <code>Application Data</code> »</small></p>
+</section>
+
+<section id="clicreation">
+<h2>Création d’une clé (1/4)</h2>
+<p>(Vous pouvez également <a href="#/gpacreation">créer une clé avec <code>gpa</code></a>.)</p>
+<pre><code data-trim contenteditable>
+$ gpg --gen-key
+gpg (GnuPG) 2.0.22; Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Sélectionnez le type de clef désiré :
+   (1) RSA et RSA (par défaut)
+   (2) DSA et Elgamal
+   (3) DSA (signature seule)
+   (4) RSA (signature seule)
+Quel est votre choix ?
+</code></pre>
+<p>Répondez « 1 » (RSA et RSA).</p>
+<pre><code data-trim contenteditable>
+les clefs RSA peuvent faire entre 1024 et 4096 bits de longueur.
+Quelle taille de clef désirez-vous ? (2048)
+</code></pre>
+<p>Répondez « 4096 » <small>(à moins de vouloir utiliser une carte à
+   puce ; lisez la documentation dans ce cas...)</small>.</p>
+</section>
+
+<section>
+<h2>Création d’une clé (2/4)</h2>
+<pre><code data-trim contenteditable>
+La taille demandée est 4096 bits
+Veuillez indiquer le temps pendant lequel cette clef devrait être valable.
+         0 = la clef n'expire pas
+      &lt;n>  = la clef expire dans n jours
+      &lt;n>w = la clef expire dans n semaines
+      &lt;n>m = la clef expire dans n mois
+      &lt;n>y = la clef expire dans n ans
+Pendant combien de temps la clef est-elle valable ? (0) 
+</code></pre>
+<p>Répondez « 2y » pour commencer <small>(on peut toujours reporter
+l’expiration)</small> et confirmez.</p>
+<pre><code data-trim contenteditable>
+La clef expire le ven. 22 avril 2016 23:40:00 CEST
+Est-ce correct ? (o/N) o
+
+GnuPG doit construire une identité pour identifier la clef.
+
+Nom réel : 
+</code></pre>
+</section>
+
+<section>
+<h2>Création d’une clé (3/4)</h2>
+<p>Indiquez votre nom tel qu’écrit sur vos pièces d’identité, et votre
+adresse électronique principale <small>(on peut en ajouter d’autres
+plus tard)</small> ; ne pas ajouter de commentaire. Confirmez avec
+« O ».</p>
+<pre><code data-trim contenteditable>
+Nom réel : Stephen Kitt
+Adresse électronique : steve@sk2.org
+Commentaire : 
+Vous avez sélectionné cette identité :
+    « Stephen Kitt &lt;steve@sk2.org> »
+
+Faut-il modifier le (N)om, le (C)ommentaire, l'(A)dresse électronique
+ou (O)ui/(Q)uitter ? O
+Une phrase de passe est nécessaire pour protéger votre clef secrète.
+</code></pre>
+<p>Vous devez alors saisir votre <em>passphrase</em>, dans l’agent
+<code>pinentry</code> si l’agent GnuPG est démarré, dans votre
+terminal sinon.</p>
+<p>Votre système peut alors vous réclamer de l’activité pour générer
+des données aléatoires.</p>
+</section>
+
+<section>
+<h2>Création d’une clé (4/4)</h2>
+<p>Après quelques minutes vous devriez obtenir votre clé :</p>
+<pre><code data-trim contenteditable>
+gpg: /home/steve/.gnupg-test/trustdb.gpg : base de confiance créée
+gpg: clef 0x3CF0E04BDEDF2B2C marquée de confiance ultime.
+les clefs publique et secrète ont été créées et signées.
+
+gpg: vérification de la base de confiance
+gpg: 3 marginale(s) nécessaire(s), 1 complète(s) nécessaire(s),
+     modèle de confiance PGP
+gpg: profondeur : 0  valables :   1  signées :   0
+     confiance : 0 i., 0 n.d., 0 j., 0 m., 0 t., 1 u.
+gpg: la prochaine vérification de la base de confiance aura lieu le 2016-04-22
+pub   4096R/0x3CF0E04BDEDF2B2C 2014-04-23 [expire : 2016-04-22]
+ Empreinte de la clef = 40EA 80F6 CFD0 29F7 91BA  38A9 3CF0 E04B DEDF 2B2C
+uid                [  ultime ] Stephen Kitt &lt;steve@sk2.org>
+sub   4096R/0x07AB1094CDD28FEE 2014-04-23 [expire : 2016-04-22]
+</code></pre>
+</section>
+
+<section>
+<h2>Fichiers de sauvegarde</h2>
+<p>Pour sauvegarder vos clés (publique et privée) :</p>
+<pre><code data-trim contenteditable>
+$ gpg --output 0x3CF0E04BDEDF2B2C-public.key --export 0x3CF0E04BDEDF2B2C 
+$ gpg --output 0x3CF0E04BDEDF2B2C-private.key --export-secret-keys 0x3CF0E04BDEDF2B2C
+</code></pre>
+<p>Pensez à refaire l’opération à chaque modification de clé !</p>
+</section>
+
+<section id="clirevocation">
+<h2>Certificat de révocation</h2>
+<p>Si jamais votre clé est compromise, ou si vous en perdez le
+contrôle (vous oubliez la <em>passphrase</em>...), vous aurez besoin
+d’un certificat de révocation. Il faut le générer pendant que vous le
+pouvez (avec votre identifiant de clé) :</p>
+<pre><code data-trim contenteditable>
+$ gpg --output 0x3CF0E04BDEDF2B2C-revoke.asc --gen-revoke 0x3CF0E04BDEDF2B2C 
+sec  4096R/0x3CF0E04BDEDF2B2C 2014-04-23 Stephen Kitt &lt;steve@sk2.org>
+
+Faut-il créer un certificat de révocation pour cette clef ? (o/N) o
+choisissez la cause de la révocation :
+  0 = Aucune raison indiquée
+  1 = La clef a été compromise
+  2 = La clef a été remplacée
+  3 = La clef n'est plus utilisée
+  Q = Annuler
+(Vous devriez sûrement sélectionner 1 ici)
+Quelle est votre décision ? 0
+Entrez une description facultative, en terminant par une ligne vide :
+> 
+Cause de révocation : Aucune raison indiquée
+(Aucune description donnée)
+Est-ce d'accord ? (o/N) o
+
+Une phrase de passe est nécessaire pour déverrouiller la clef secrète de
+l'utilisateur : « Stephen Kitt &lt;steve@sk2.org> »
+clef RSA de 4096 bits, identifiant 0x3CF0E04BDEDF2B2C, créée le 2014-04-23
+
+sortie forcée avec armure ASCII.
+Certificat de révocation créé.
+
+Veuillez le déplacer sur un support que vous pouvez cacher ; toute personne
+accédant à ce certificat peut l'utiliser pour rendre votre clef inutilisable.
+Imprimer ce certificat et le stocker ailleurs est une bonne idée, au cas où le
+support devienne illisible. Attention quand même : le système d'impression
+utilisé pourrait stocker ces données et les rendre accessibles à d'autres.
+</code></pre>
+<p>Mettez le fichier généré à l’abri...</p>
+</section>
+
+<section id="cliadd">
+<h2>Autres adresses électroniques</h2>
+<p>Avant de faire signer votre clé, ajoutez les autres adresses
+électroniques que vous souhaitez y voir figurer :<p>
+<pre><code data-trim contenteditable>
+$ gpg --edit-key 0x3CF0E04BDEDF2B2C
+gpg (GnuPG) 2.0.22; Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+La clef secrète est disponible.
+
+pub  4096R/0x3CF0E04BDEDF2B2C  créé : 2014-04-23  expire : 2016-04-22  utilisation : SC  
+                               confiance : ultime        validité : ultime
+sub  4096R/0x07AB1094CDD28FEE  créé : 2014-04-23  expire : 2016-04-22  utilisation : E   
+[  ultime ] (1). Stephen Kitt &lt;steve@sk2.org>
+
+gpg> adduid
+Nom réel : Stephen Kitt
+Adresse électronique : skitt@debian.org
+Commentaire : 
+Vous avez sélectionné cette identité :
+    « Stephen Kitt &lt;skitt@debian.org> »
+
+Faut-il modifier le (N)om, le (C)ommentaire, l'(A)dresse électronique
+ou (O)ui/(Q)uitter ? O
+
+Une phrase de passe est nécessaire pour déverrouiller la clef secrète de
+l'utilisateur : « Stephen Kitt &lt;steve@sk2.org> »
+clef RSA de 4096 bits, identifiant 0x3CF0E04BDEDF2B2C, créée le 2014-04-23
+
+
+pub  4096R/0x3CF0E04BDEDF2B2C  créé : 2014-04-23  expire : 2016-04-22  utilisation : SC  
+                               confiance : ultime        validité : ultime
+sub  4096R/0x07AB1094CDD28FEE  créé : 2014-04-23  expire : 2016-04-22  utilisation : E   
+[  ultime ] (1)  Stephen Kitt &lt;steve@sk2.org>
+[ inconnue] (2). Stephen Kitt &lt;skitt@debian.org>
+
+gpg> save
+</code></pre>
+<p>La suite, c’est à l’<a href="#/etape2">étape 2</a>...</p>
+</section>
+
+<section id="windowsinst">
+<h2>Windows : installation</h2>
+<p>Installez <a href="http://www.gpg4win.org">Gpg4win</a>, en précisant :</p>
+<img class="stretch" src="gpg4win-install3.png" width="503" height="386">
+<p>(Vous pouvez décocher Kleopatra, et si vous n’avez pas Outlook, GpgOL.)</p>
+</section>
+
+<section>
+<h2>Paramétrage</h2>
+<p>Dans votre dossier « <code>Application Data</code> », créez un dossier
+<code>gnupg</code> s’il n’existe pas déjà, et créez dans ce dossier fichier
+<code>gpg.conf</code> comme suit (merci <a
+href="https://we.riseup.net/riseuplabs+paow/openpgp-best-practices">https://we.riseup.net/riseuplabs+paow/openpgp-best-practices</a>) :</p>
+<pre class="stretch"><code data-trim contenteditable>
+# Identifiants distincts des clés à l'affichage
+fixed-list-mode
+
+# Empreintes longues pour réduire les risques de spoofing
+keyid-format 0xlong
+with-fingerprint
+
+# Privilégions des algorithmes de hash plus résistants
+personal-digest-preferences SHA512 SHA384 SHA256 SHA224
+
+# De même dans les clés
+default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 BZIP2 ZLIB ZIP Uncompressed
+
+# Il faut utiliser un agent (cf. https://www.debian-administration.org/users/dkg/weblog/64)
+use-agent
+
+# Il faut connaître le niveau de confiance
+verify-options show-uid-validity
+list-options show-uid-validity
+
+# SHA512 pour les nouveaux certificats
+cert-digest-algo SHA512
+
+# Serveur de clés qui fonctionne, imposé dans tous les cas
+keyserver hkps://hkps.pool.sks-keyservers.net
+keyserver-options ca-cert-file=...\Application Data\gnupg\sks-keyservers.netCA.pem
+keyserver-options no-honor-keyserver-url
+</code></pre>
+<p>(Complétez la partie <code>...\Application Data</code>.)
+<p>Enregistrez <a
+href="https://sks-keyservers.net/sks-keyservers.netCA.pem">https://sks-keyservers.net/sks-keyservers.netCA.pem</a>
+dans le même dossier.</p>
+</section>
+
+<section id="gpacreation">
+<h2>Création d’une clé (1/2)</h2>
+<p>(Vous pouvez également <a href="#/clicreation">créer une clé en
+ligne de commande</a>.)</p>
+<img class="stretch" src="gpa-nouvelle-cle1.png" width="682" height="626">
+</section>
+
+<section>
+<h2>Création d’une clé (2/2)</h2>
+<p>Choisissez la taille de clé, saisissez vos nom et adresse
+électronique, et choisissez une date d’expiration :</p>
+<img class="stretch" src="gpa-nouvelle-cle2.png" width="376" height="254">
+</span>
+</section>
+
+<section>
+<h2>Fichier de sauvegarde</h2>
+<img class="stretch" src="gpa-sauvegarde-cle.png" width="682"
+height="626">
+<p>Le fichier généré contient vos clés publique et privée.</p>
+<p>La suite se fait en ligne de commande : <a
+href="#/clirevocation">générez votre certificat de révocation</a>.</p>
+</section>
+
+<section id="macosxinst">
+<h2>Mac OS X : installation</h2>
+<p>Installez <a href="https://gpgtools.org">GPGTools</a>.</p>
+<p>Lorsque l’outil d’installation vous propose de générer une nouvelle paire de clés, remplissez les informations demandées et corrigez la longueur de clé :</p>
+<img class="stretch" src="gpgtools-create-key.png" width="1123" height="809">
+<p>L’outil créera votre clé et la mettra à disposition sur les serveurs de clés.</p>
+</section>
+
+<section>
+<h2>Paramétrage</h2>
+<p>Créez un dossier <code>~/.gnupg</code> et le fichier
+<code>~/.gnupg/gpg.conf</code> comme suit (merci <a
+href="https://we.riseup.net/riseuplabs+paow/openpgp-best-practices">https://we.riseup.net/riseuplabs+paow/openpgp-best-practices</a>) :</p>
+<pre class="stretch"><code data-trim contenteditable>
+# Identifiants distincts des clés à l'affichage
+fixed-list-mode
+
+# Empreintes longues pour réduire les risques de spoofing
+keyid-format 0xlong
+with-fingerprint
+
+# Privilégions des algorithmes de hash plus résistants
+personal-digest-preferences SHA512 SHA384 SHA256 SHA224
+
+# De même dans les clés
+default-preference-list SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 BZIP2 ZLIB ZIP Uncompressed
+
+# Il faut utiliser un agent (cf. https://www.debian-administration.org/users/dkg/weblog/64)
+use-agent
+
+# Il faut connaître le niveau de confiance
+verify-options show-uid-validity
+list-options show-uid-validity
+
+# SHA512 pour les nouveaux certificats
+cert-digest-algo SHA512
+
+# Serveur de clés qui fonctionne, imposé dans tous les cas
+keyserver hkps://hkps.pool.sks-keyservers.net
+keyserver-options ca-cert-file=~/.gnupg/sks-keyservers.netCA.pem
+keyserver-options no-honor-keyserver-url
+</code></pre>
+<p>Enregistrez <a
+href="https://sks-keyservers.net/sks-keyservers.netCA.pem">https://sks-keyservers.net/sks-keyservers.netCA.pem</a>
+dans <code>~/.gnupg/</code>.</p>
+</section>
+
+<section>
+<h2>Certificat de révocation</h2>
+<p>Si jamais votre clé est compromise, ou si vous en perdez le
+contrôle (vous oubliez la <em>passphrase</em>...), vous aurez besoin
+d’un certificat de révocation. Il faut le générer pendant que vous le
+pouvez (avec votre identifiant de clé) :</p>
+<img class="stretch" src="gpgtools-revocation-certificate.png" width="665" height="304">
+<p>Mettez le fichier généré à l’abri...</p>
+</section>
+
+<section>
+<h2>Fichiers de sauvegarde</h2>
+<p>Pour sauvegarder vos clés (publique et privée), cliquez sur le bouton « Exporter » :</p>
+<img class="stretch" src="gpgtools-export-key.png" width="1123" height="809">
+<p>Pensez à refaire l’opération à chaque modification de clé !</p>
+</section>
+
+<section>
+<h2>Autres adresses électroniques</h2>
+<p>Avant de faire signer votre clé, ajoutez les autres adresses
+électroniques que vous souhaitez y voir figurer, à partir du menu
+contextuel sur la clé :<p>
+<img src="gpgtools-ajout-identite0.png" width="273" height="42">
+<br>
+<span class="stretch">
+<img src="gpgtools-ajout-identite2.png" width="494" height="535"
+style="vertical-align: middle;">
+<img src="gpgtools-ajout-identite3.png" width="494" height="535"
+style="vertical-align: middle;">
+</span>
+</section>
+
+</section>
+<!-- Ensemble vertical (fin) -->
+
+<!-- Ensemble vertical (début) -->
+<section>
+
+<section id="etape2">
+<h3>Comment participer</h3>
+<h2>Étape 2 : partagez votre clé OpenPGP</h2>
+<p>Voir ci-dessous les instructions selon votre cas :</p>
+<ul>
+  <li><a href="#/cmdlineshare">ligne de commande</a></li>
+  <li><a href="#/gpashare"><code>gpa</code></a></li>
+</ul>
+</section>
+
+<section id="cmdlineshare">
+<h2>Export avec <code>gpg</code></h2>
+<p>Pour rendre votre clé publique disponible :</p>
+<pre><code data-trim contenteditable>
+$ gpg --send-key 0x3CF0E04BDEDF2B2C
+gpg: envoi de la clef 0x3CF0E04BDEDF2B2C au serveur hkps hkps.pool.sks-keyservers.net
+</code></pre>
+<p style="text-align: right;"><a href="#/etape3">Étape 3...</a></p>
+</section>
+
+<section id="gpashare">
+<h2>Export avec <code>gpa</code></h2>
+<img class="stretch" src="gpa-send.png" width="682" height="625">
+<p style="text-align: right;"><a href="#/etape3">Étape 3...</a></p>
+</section>
+
+</section>
+<!-- Ensemble vertical (fin) -->
+
+<section id="etape3">
+<h3>Comment participer</h3>
+<h2>Étape 3 : imprimez votre clé</h2>
+<p>Vous aurez besoin de</p>
+<ul>
+  <li>vos prénom et nom</li>
+  <li>vos adresses électroniques</li>
+  <li>le type et l’identifiant de votre clé</li>
+  <li>l’empreinte de votre clé</li>
+</ul>
+<p>sur papier (papier libre, carte de visite...).</p>
+<pre><code data-trim contenteditable>
+apt-get install signing-party ghostscript
+gpg-key2ps -p a4 0x3CF0E04BDEDF2B2C > cles.ps
+ps2pdf cles.ps cles.pdf
+</code></pre>
+<img src="cles-imprimees.png">
+</section>
+
+<section>
+<h3>Comment participer</h3>
+<h2>Étape 4 : rencontrez des gens !</h2>
+<img src="logo-mixit-transparent.png">
+<p><strong>Key-signing party ce soir à La Plateforme</strong></p>
+<p><a
+href="https://wiki.debian.org/Keysigning/Offers">https://wiki.debian.org/Keysigning/Offers</a></p>
+<p><a
+href="http://www.biglumber.com/">http://www.biglumber.com/</a></p>
+<p><a href="https://j.mp/kgpgmap">https://j.mp/kgpgmap</a></p>
+<p>N’oubliez pas une pièce d’identité !</p>
+</section>
+
+<section>
+<h3>Comment participer</h3>
+<h2>Étape 5a : demandez des autographes</h2>
+<p>Donnez votre empreinte OpenPGP</p>
+<img src="cles-imprimees.png">
+<p>Montrez votre pièce d’identité</p>
+<img src="passeport.jpg" width="250" height="178">
+</section>
+
+<section>
+<h3>Comment participer</h3>
+<h2>Étape 5b : proposez des autographes</h2>
+<p>Vérifiez des empreintes OpenPGP et des pièces d’identité</p>
+<img src="passeport.jpg" width="250" height="178">
+<br clear="both">
+<ul>
+  <li>La photo doit correspondre à la personne</li>
+  <li>Le nom doit correspondre à l’empreinte</li>
+</ul>
+<p>Gardez les empreintes OpenPGP vérifiées</p>
+<img src="cles-imprimees.png">
+</section>
+
+<!-- Ensemble vertical (début) -->
+<section>
+
+<section>
+<h3>Comment participer</h3>
+<h2>Étape 6 : signez les clés</h2>
+<ul>
+  <li><a href="#/etape6cli">Ligne de commande</a></li>
+  <li><a href="#/etape6gpa">GPA</a></li>
+  <li><a href="#/etape6gpgtools">GPGTools</a></li>
+</ul>
+</section>
+
+<section id="etape6cli">
+<h2>Signature de clé en ligne de commande</h2>
+<p>Récupérez la clé à signer :</p>
+<pre><code data-trim contenteditable>
+$ gpg --recv-key 0x3CF0E04BDEDF2B2C
+</code></pre>
+<p>Signez la :</p>
+<pre><code data-trim contenteditable>
+$ gpg --sign-key 0x3CF0E04BDEDF2B2C
+pub  4096R/0x3CF0E04BDEDF2B2C  créé : 2014-04-30  expire : 2019-01-23  utilisation : SC  
+                               confiance : inconnu       validité : inconnu
+sub  4096R/0x8F2EAA712B821144  créé : 2010-05-30  expire : 2019-01-23  utilisation : E   
+[ inconnue] (1). Stephen Kitt &lt;skitt@debian.org>
+[ inconnue] (2)  Stephen Kitt &lt;steve@sk2.org>
+
+Voulez-vous vraiment signer toutes les identités ? (o/N) 
+</code></pre>
+<p>Si les informations correspondent à l’empreinte vérifiée, confirmez
+(deux fois) et saisissez votre <em>passphrase</em>. En l’absence de
+message d’erreur la clé est signée.</p>
+<p style="text-align: right;"><a href="#/etape7">Étape 7...</a></p>
+</section>
+
+<section id="etape6gpa">
+<h2>Signature de clé avec <code>gpa</code> (1/2)</h2>
+<p>Récupérez la clé à signer :</p>
+<span class="stretch" style="vertical-align: middle;">
+<img src="gpa-menu-recup-cles.png" width="682" height="626" style="vertical-align: middle;">
+<img src="gpa-recup-cle.png" width="277" height="140" style="vertical-align: middle;">
+</span>
+</section>
+
+<section>
+<h2>Signature de clé avec <code>gpa</code> (2/2)</h2>
+<p>Signez la, à partir du menu contextuel sur la clé :</p>
+<span class="stretch" style="vertical-align: middle;">
+<img src="gpa-selection-cle.png" width="319" height="218" style="vertical-align: middle;">
+<img src="gpa-signer-clef.png" width="499" height="299" style="vertical-align: middle;">
+</span>
+<p style="text-align: right;"><a href="#/etape7">Étape 7...</a></p>
+</section>
+
+<section id="etape6gpgtools">
+<h2>Signature de clé avec GPGTools (1/2)</h2>
+<p>Récupérez la clé à signer :</p>
+<span class="stretch" style="vertical-align: middle;">
+<img src="gpgtools-receive-key1.png" width="662" height="297" style="vertical-align: middle;">
+<img src="gpgtools-receive-key2.png" width="489" height="195" style="vertical-align: middle;">
+</span>
+</section>
+
+<section>
+<h2>Signature de clé avec GPGTools (2/2)</h2>
+<p>Signez la, à partir du menu contextuel sur la clé :</p>
+<img class="stretch" src="gpgtools-sign-key.png" width="764" height="301">
+<p style="text-align: right;"><a href="#/etape7">Étape 7...</a></p>
+</section>
+
+</section>
+<!-- Ensemble vertical (fin) -->
+
+<section>
+<h3>Comment participer</h3>
+<h2>Étape 7 : envoyez les clés signées</h2>
+<p>Pour vous assurer que vos clés signées vont aux bonnes personnes,
+exportez-les et envoyez-les par mail (de préférence chiffré).</p>
+<p>Avec <code>gpg</code> :</p>
+<pre><code data-trim contenteditable>
+$ gpg --armor --output 0x3CF0E04BDEDF2B2C-signed.key --export 0x3CF0E04BDEDF2B2C
+</code></pre>
+<div style="width: 50%; float: left; padding-bottom: 0.5em;">
+  <p>Avec <code>gpa</code> :</p>
+  <img src="gpa-selection-cle-export.png" width="312" height="216">
+</div>
+<div style="width: 50%; float: right; padding-bottom: 0.5em;">
+  <p>Avec GPGTools :</p>
+  <img src="gpgtools-sign-key-small.png" width="281" height="245">
+</div>
+</section>
+
+<section>
+<h3>Comment participer</h3>
+<h2>Étape 8 : intégrez les signatures de votre clé</h2>
+<p>Lorsque vous recevez des signatures de votre clé, intégrez-les avec
+votre outil préféré.</p>
+<p>Avec <code>gpg</code> :</p>
+<pre><code data-trim contenteditable>
+$ gpg --import 0x3CF0E04BDEDF2B2C-signed.key
+</code></pre>
+<p>Avec <code>gpa</code> ou GPGTools, utilisez le bouton « Importer »
+dans la barre d’outils.</p>
+<p>Exportez de nouveau votre clé publique vers les serveurs de clé, et
+le lundi suivant vous pourrez voir l’évolution de votre clé dans le
+<em>web of trust</em> sur <a
+href="http://pgp.cs.uu.nl/">http://pgp.cs.uu.nl/</a> !</p>
+</section>
+
+<section data-state="linuxplustree">
+<h2>Bienvenue dans le <em>web of trust</em> !</h2>
+<canvas width="1024" height="651" id="linuxplusview"></canvas>
+</section>
+
+<section>
+<h2>Pour aller plus loin</h2>
+<ul>
+  <li>Confiance : <a
+  href="http://cm.bell-labs.com/who/ken/trust.html">« Reflections on
+  trusting trust »</a></li>
+  <li>Confidentialité : <a href="https://tails.boum.org/">Tails</a>,
+  <a href="https://www.torproject.org/">Tor Project</a>, <a
+  href="https://schleuder2.nadir.org/">Schleuder</a>, <a
+  href="http://blog.tincho.org/posts/DNSSEC__44___DANE__44___SSHFP__44___etc/">DNSSEC,
+  SSHFP, DANE, etc.</a></li>
+  <li>Stockage sûr : <a href="camlistore.org">Camlistore</a></li>
+  <li><a
+  href="https://www.usenix.org/legacy/events/sec99/whitten.html">Pourquoi
+  Johnny ne peut-il pas chiffrer ?</a></li>
+  <li><a
+  href="https://we.riseup.net/riseuplabs+paow/openpgp-best-practices"><em>Best
+  practices</em> OpenPGP</a></li>
+  <li>Implication dans des projets : <a
+  href="https://openhatch.org/">OpenHatch</a>, <a
+  href="http://eudyptula-challenge.org">Eudyptula Challenge</a>,
+  <a href="https://www.debian.org/intro/help">Debian</a>
+  <small>(<a href="https://wiki.debian.org/Teams/OTR">OTR</a>, <a
+  href="https://wiki.debian.org/Hardening/Goals">durcissement</a>, <a
+  href="https://wiki.debian.org/ReproducibleBuilds">reproductibilité</a>)</small></li>
+  <li>Nouvelle forme de <em>web of trust</em> : <a
+  href="https://keybase.io">Keybase</a></li>
+  <li><a
+  href="http://www.eyrie.org/~eagle/journal/2014-04/003.html">« On
+  learning, growth, and trust »</a> : leçons de Heartbleed pour les
+  communautés libres</a></li>
+  <li><a
+  href="http://lorddoig.svbtle.com/heartbleed-should-bleed-x509-to-death">« Heartbleed
+  should bleed X.509 to death »</a></li>
+  <li><a href="https://bettercrypto.org/"><em>Applied Crypto Hardening</em></a></li>
+</ul>
+</section>
+
+<section>
+<h1>Merci !</h1>
+<h2>Des questions ?</h2>
+<h3>N’oubliez pas la <em>key-signing party</em><br>
+ce soir à La Plateforme</h3>
+<p><small>© 2014 Stephen Kitt, disponible sous licence <a
+href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0
+<img src="80x15.png" width="80" height="15" style="margin: 0px;"></a>
+</small></p>
+<p><small>
+Moteur <a href="http://revealjs.com">reveal.js</a> © 2014
+Hakim El Hattab, disponible sous licence MIT
+<br>
+Graphes pilotés par <a href="http://arborjs.org">arbor.js</a>
+© 2011 Samizdat Drafting Co., disponible sous licence MIT
+<br>
+Photo d’Edward Snowden © 2013 Laura Poitras / Praxis Films,
+disponible sous licence <a
+href="https://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a>
+<br>
+Vignettes <a href="https://xkcd.com">xkcd</a> © 2008, 2014 Randall
+Munroe, disponible sous licence <a
+href="http://creativecommons.org/licenses/by-nc/2.5/">CC-BY-NC 2.5</a>
+<br>
+Lignes de code comptées par SLOCCount de David A. Wheeler
+</small></p>
+</section>
+
 
 			</div>
 
@@ -368,7 +1260,9 @@ function linkify( selector ) {
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
+				width: 1024,
+				height: 768,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
@@ -390,5 +1284,13 @@ function linkify( selector ) {
 
 		</script>
 
+  <script src="jquery.min.js"></script>
+  <script src="./arbor.js"></script>
+  <script src="arbor-graphics.js"></script>
+  <script src="arbor-renderer.js"></script>
+
+  <script src="php.js"></script>
+  <script src="linux.js"></script>
+  <script src="linuxplus.js"></script>
 	</body>
 </html>
