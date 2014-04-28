@@ -625,6 +625,7 @@ list-options show-uid-validity
 cert-digest-algo SHA512
 
 # Serveur de clés qui fonctionne, imposé dans tous les cas
+# Pour utiliser gpa, remplacer hkps:// par https://
 keyserver hkps://hkps.pool.sks-keyservers.net
 keyserver-options ca-cert-file=~/.gnupg/sks-keyservers.netCA.pem
 keyserver-options no-honor-keyserver-url
@@ -632,8 +633,6 @@ keyserver-options no-honor-keyserver-url
 <p>Enregistrez <a
 href="https://sks-keyservers.net/sks-keyservers.netCA.pem">https://sks-keyservers.net/sks-keyservers.netCA.pem</a>
 dans <code>~/.gnupg/</code>.</p>
-<p><small>Sous Windows, tout ça se trouve dans votre dossier
-« <code>Application Data</code> »</small></p>
 </section>
 
 <section id="clicreation">
@@ -862,6 +861,7 @@ list-options show-uid-validity
 cert-digest-algo SHA512
 
 # Serveur de clés qui fonctionne, imposé dans tous les cas
+# Pour utiliser gpa, remplacer hkps:// par https://
 keyserver hkps://hkps.pool.sks-keyservers.net
 keyserver-options ca-cert-file=...\Application Data\gnupg\sks-keyservers.netCA.pem
 keyserver-options no-honor-keyserver-url
